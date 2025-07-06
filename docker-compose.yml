@@ -1,0 +1,15 @@
+services:
+  api:
+    # Constrói a imagem a partir do Dockerfile na pasta atual.
+    build: .
+    container_name: alura-escola-api
+    # Mapeia a porta 8000 do host para a porta 8000 do contêiner.
+    ports:
+      - "8000:8000"
+
+    # Monta o diretório atual no diretório /app do contêiner.
+    # Isso permite que as alterações no código local sejam refletidas
+    # instantaneamente no contêiner, ativando o --reload do uvicorn.
+    # O banco de dados 'escola.db' também será salvo no seu diretório local.
+    volumes:
+      - .:/app

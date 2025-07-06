@@ -1,0 +1,23 @@
+# Git
+.git
+.gitignore
+
+# Docker
+Dockerfile
+.dockerignore
+
+# Ambiente virtual
+.venv/
+venv/
+env/
+
+# Cache do Python e outros
+__pycache__/
+*.py[cod]
+*.pyc
+.pytest_cache/
+.mypy_cache/
+
+# # Banco de dados local
+# escola.db
+# *.sqlite3
