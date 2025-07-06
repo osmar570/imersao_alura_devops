@@ -4,7 +4,7 @@ from sqlalchemy.orm import sessionmaker
 import os
 
 # Caminho para o arquivo SQLite (pode ser ajustado conforme necessário)
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+BASE_DIR = os.path.dirname(os.path.abspath('.'))
 DATABASE_URL = f"sqlite:///{os.path.join(BASE_DIR, 'escola.db')}"
 
 engine = create_engine(
